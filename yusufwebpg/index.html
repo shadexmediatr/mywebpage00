@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf - Geliştirici & Tasarımcı</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Anasayfa</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>Hakkımda</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Yeteneklerim</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>
+                    <span>Projelerim</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>İletişim</span>
+                </a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <div class="toggle-switch">
+                    <div class="toggle-slider"></div>
+                </div>
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="hero">
+                <div class="hero-badge">
+                    <span class="typing-text">Merhaba, Ben Bir Geliştiriciyim!</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text typing-text-2">Merhabalar Ben,</span>
+                    <span class="gradient-text-2 typing-text-3">Yusuf</span>
+                </h1>
+                <p class="hero-description typing-text-4">
+                    React, Next.js gibi modern teknolojilerle frontend geliştiriyor; Node.js, PHP ve SQL ile backend sistemler kuruyorum. 
+                    Minecraft eklentileri (Java) ve Discord botları (JavaScript) geliştiriyorum. Ayrıca Linux/Windows sunucu yönetimi, 
+                    sanallaştırma (VMware) ve güvenlik konularında bilgiliyim.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('about')">
+                        Hakkımda
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('projects')">
+                        Projelerim
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Hakkımda</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="media/photo/akvapng.png" alt="Yusuf" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Ben Yusuf,</h3>
+                        <p>
+                            React, Next.js gibi modern teknolojilerle frontend geliştiriyor; Node.js, PHP ve SQL ile backend sistemler kuruyorum. 
+                            Minecraft eklentileri (Java) ve Discord botları (JavaScript) geliştiriyorum. Ayrıca Linux/Windows sunucu yönetimi, 
+                            sanallaştırma (VMware) ve güvenlik konularında bilgiliyim.
+                        </p>
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="info-label">Yaş</span>
+                                <span class="info-value">25</span>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="info-label">Konum</span>
+                                <span class="info-value">Türkiye, İstanbul</span>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-briefcase"></i>
+                                <span class="info-label">Deneyim</span>
+                                <span class="info-value">3+ Yıl</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Yeteneklerim</h2>
+                <p class="section-description">
+                    Kariyerim boyunca çeşitli teknolojiler ve araçlarla çalıştım. İşte teknik becerilerim ve uzmanlığımın bir özeti.
+                </p>
+                
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Duyarlı ve etkileşimli kullanıcı arayüzleri oluşturma</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Sağlam sunucu tarafı uygulamaları ve API'ler oluşturma</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design</h3>
+                        <p>Güzel ve sezgisel kullanıcı deneyimleri oluşturma</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                        <p>Verimli iş akışları için geliştirme araçlarını kullanma</p>
+                    </div>
+                </div>
+
+                <div class="skills-progress">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="85"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="80"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="90"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="85"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="75"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="70"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projelerim</h2>
+                <p class="section-description">
+                    İşte kendi yapmış olduğum projelerin sadece bir kaçı.
+                </p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Discord Destek Sistemi</h3>
+                            <p>Basit bir discord destek sistemi. Bu sistem sayesinde sunucularınızda destek hizmeti sağlayabilir sattığınız ürünler için.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Kişisel Web Sitesi</h3>
+                            <p>Bu proje, bireyin kendisini internet ortamında tanıtabilmesi amacıyla geliştirilen, modern ve kullanıcı dostu bir tek sayfalık web sitesi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-key"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Lisans Yönetim Sistemi</h3>
+                            <p>Genel olarak Minecraft eklentileri, Eklenti paketleri, Discord botları, Web yazılımları üzerinde kullanılan lisans yönetim sistemi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">İletişime Geçin</h2>
+                <p class="section-description">
+                    Aklınızda bir proje mi var veya olası fırsatları mı görüşmek istiyorsunuz? Bana ulaşmaktan çekinmeyin!
+                </p>
+                
+                <div class="contact-card">
+                    <div class="contact-section">
+                        <h3>İletişim Bilgileri</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">E-Posta</span>
+                                <span class="contact-value">iletisim@yusufweb.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Web Sitesi</span>
+                                <span class="contact-value">www.yusufweb.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-divider"></div>
+                    
+                    <div class="contact-section">
+                        <h3>Social Media</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/YusufWeb</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/yusufweb</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
